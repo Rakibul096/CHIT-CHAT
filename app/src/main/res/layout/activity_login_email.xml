@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="20">
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/circular_bg"
+                android:backgroundTint="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Sign Up"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/circular_bg"
+                android:backgroundTint="@color/my_primary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Sign In"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+<!--            <RelativeLayout-->
+<!--                android:layout_width="64dp"-->
+<!--                android:layout_height="64dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:background="@drawable/circular_bg"-->
+<!--                android:backgroundTint="@color/light_gray">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:text="Name"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    tools:ignore="HardcodedText" />-->
+<!--            </RelativeLayout>-->
+        </LinearLayout>
+
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/my_primary"
+            android:padding="12dp"
+            android:text="Log In"
+            android:layout_marginBottom="200dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+<!--        &lt;!&ndash; Forgot Password &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/forgotPassword"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text=""-->
+<!--            android:textColor="#6200EE"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:textSize="14sp" />-->
+        <!-- Sign Up Button -->
+<!--        <Button-->
+<!--            android:id="@+id/signUpButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:padding="12dp"-->
+<!--            android:backgroundTint="@color/my_primary"-->
+<!--            android:text="Sign Up"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="16sp" />-->
+        <TextView
+            android:id="@+id/reEnterOrSignUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Re-Enter or Sign Up"
+            android:textColor="#6200EE"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+</layout>

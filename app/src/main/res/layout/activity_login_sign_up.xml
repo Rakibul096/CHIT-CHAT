@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".SignUpActivity">
+
+        <!-- Circular Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/circular_bg"
+                android:backgroundTint="@color/my_primary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Sign Up"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/circular_bg"
+                android:backgroundTint="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Sign In"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="64dp"-->
+            <!--                android:layout_height="64dp"-->
+            <!--                android:layout_margin="10dp"-->
+            <!--                android:background="@drawable/circular_bg"-->
+            <!--                android:backgroundTint="@color/light_gray">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:text="Done"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    android:textSize="12sp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    tools:ignore="HardcodedText" />-->
+            <!--            </RelativeLayout>-->
+        </LinearLayout>
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <!-- Confirm Password Input -->
+        <EditText
+            android:id="@+id/confirmPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/my_primary"
+            android:padding="12dp"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Navigate to Login -->
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Already have an account? Log In"
+            android:textColor="#6200EE"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</layout>
